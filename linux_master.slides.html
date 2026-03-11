@@ -7,10 +7,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>linux_adv_v20250312 slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>linux_master slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -14671,9 +14671,9 @@ div.jp-OutputPrompt {
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --><!-- Reveal Theme -->
-<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
 
-</head>
+<link rel="stylesheet" href="premium_slides.css"></head>
 
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
@@ -14685,13 +14685,57 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Linux Advanced Practice</strong></p>
+<h1 id="%F0%9F%8C%8D-Why-Command-Line-Interface-(CLI)-in-the-Era-of-AI?">&#127757; Why Command-Line Interface (CLI) in the Era of AI?<a class="anchor-link" href="#%F0%9F%8C%8D-Why-Command-Line-Interface-(CLI)-in-the-Era-of-AI?">&#182;</a></h1><h3 id="%F0%9F%A4%96-Understanding-the-'Black-Box'">&#129302; Understanding the 'Black Box'<a class="anchor-link" href="#%F0%9F%A4%96-Understanding-the-'Black-Box'">&#182;</a></h3><ul>
+<li>Understanding CLI opens the <strong>AI &quot;Black Box&quot;</strong>.</li>
+<li>Precision prompts require <strong>deep technical logic</strong>.</li>
+<li><strong>Don't just copy-paste</strong>; learn to debug AI.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%F0%9F%9B%91-Breaking-Through-the-'GUI-Wall'">&#128721; Breaking Through the 'GUI Wall'<a class="anchor-link" href="#%F0%9F%9B%91-Breaking-Through-the-'GUI-Wall'">&#182;</a></h3><ul>
+<li><strong>Big Data Reality</strong>: Excel and Notepad will crash when opening <strong>&gt;10GB</strong> <code>.fastq</code> files.</li>
+<li><strong>Efficiency</strong>: Use <code>head</code> or <code>wc</code> to analyze massive datasets in <strong>milliseconds</strong>.</li>
+<li><strong>Scale</strong>: CLIs are built for the high-volume data of <strong>modern virology</strong>.</li>
+</ul>
+<h3 id="%F0%9F%A7%B1-Automation-&amp;-The-'Lego'-Philosophy">&#129521; Automation &amp; The 'Lego' Philosophy<a class="anchor-link" href="#%F0%9F%A7%B1-Automation-&amp;-The-'Lego'-Philosophy">&#182;</a></h3><ul>
+<li><strong>Stop Manual Clicking</strong>: Automate repetitive tasks with simple scripts.</li>
+<li><strong>Lego Logic</strong>: Chain simple tools (<code>grep</code>, <code>sort</code>, <code>awk</code>) using the <strong>Pipe <code>|</code></strong>.</li>
+<li><strong>Remote Power</strong>: Access supercomputers and AI servers that have <strong>NO graphical interface</strong>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Outline. Part 1</strong></p>
 <ol>
-<li>Difference between <code>sh</code> vs <code>bash</code></li>
-<li>Difference Between <code>[[</code> vs <code>[</code> vs <code>(</code> vs <code>((</code> in Bash</li>
-<li>Sorting FASTA Sequences by Length in Linux</li>
-<li>Question 1. Histogram of Sequence Identities of Inter- and Intra-group</li>
-<li>Question 2. Sequence Identity Matrix of Inter- and Intra-groups</li>
+<li>Linux and shells</li>
+<li>reasons why linux is better</li>
+<li>linux environments</li>
+<li>commonly-used commands</li>
+<li>useful tips in Linux</li>
+<li>command <strong><code>man</code></strong> (short for MANual page)</li>
+<li>Mastering I/O redirection using <strong><code>ls</code></strong></li>
+<li>file and folder permissions</li>
+<li>vi editor</li>
+<li><strong><code>sed</code></strong> (short for Stream EDitor) to find and replace text</li>
+<li>print and count file content</li>
+<li>use <strong><code>grep</code></strong> and <strong><code>wc</code></strong> to count sequences</li>
 </ol>
 
 </div>
@@ -14704,7 +14748,2081 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="1.-Difference-between-sh-vs-bash">1. Difference between <code>sh</code> vs <code>bash</code><a class="anchor-link" href="#1.-Difference-between-sh-vs-bash">&#182;</a></h1><p><code>sh</code> and <code>bash</code> are both command-line interpreters in Unix-like systems, but there are some key differences:</p>
+<h2 id="Opening-Challenges">Opening Challenges<a class="anchor-link" href="#Opening-Challenges">&#182;</a></h2><h3 id="Q1:-Data-Quantity:-%22How-many-sequences-are-in-this-file?%22">Q1: Data Quantity: "How many sequences are in this file?"<a class="anchor-link" href="#Q1:-Data-Quantity:-%22How-many-sequences-are-in-this-file?%22">&#182;</a></h3><ul>
+<li>The Goal: Verifying data integrity and sequencing depth.</li>
+<li>The Problem: How do we count millions of lines efficiently?</li>
+</ul>
+<h3 id="Q2:-Data-Organization:-%22How-to-generate-a-metadata-(.csv)-from-this-file?%22">Q2: Data Organization: "How to generate a metadata (.csv) from this file?"<a class="anchor-link" href="#Q2:-Data-Organization:-%22How-to-generate-a-metadata-(.csv)-from-this-file?%22">&#182;</a></h3><ul>
+<li>The Goal: Mapping raw IDs to experimental conditions.</li>
+<li>The Problem: How do we transform &quot;strings of text&quot; into a &quot;structured table&quot;?</li>
+</ul>
+<p><img src="img/OS/demo.png" alt="Picture of the Beach -50width" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="1.-Linux-and-shells">1. Linux and shells<a class="anchor-link" href="#1.-Linux-and-shells">&#182;</a></h1><ul>
+<li>Linux is a family of <strong>&quot;open-source&quot; and &quot;Unix-like&quot;</strong> operating systems<ul>
+<li><strong>kernel</strong>: a computer program, or the core of a computer's OS, controling everything in the system.</li>
+<li><strong>shell</strong>: a special user program, providing an interface for user to use OS services.</li>
+</ul>
+</li>
+</ul>
+<p><img src="img/OS/OS.jpg" alt="Picture of the Beach -50width" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="2.-reasons-why-linux-is-better">2. reasons why linux is better<a class="anchor-link" href="#2.-reasons-why-linux-is-better">&#182;</a></h1><ul>
+<li><strong>free to use</strong><ul>
+<li>better community and support</li>
+</ul>
+</li>
+<li><strong>open source culture</strong> (started from Freax v0.01 in 1991)<ul>
+<li>various distributions, ownership, and customization</li>
+<li>revive older computers</li>
+<li>reliability (do not worry about re-install or re-boot)</li>
+</ul>
+</li>
+<li><strong>security and privacy</strong></li>
+<li><strong>perfect for programmers</strong><ul>
+<li>shell script</li>
+<li>software updates more quickly</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="3.-Linux-Environments">3. Linux Environments<a class="anchor-link" href="#3.-Linux-Environments">&#182;</a></h1><h3 id="%F0%9F%8D%8E-Mac-User">&#127822; Mac User<a class="anchor-link" href="#%F0%9F%8D%8E-Mac-User">&#182;</a></h3><ul>
+<li>Just open the <strong>Terminal app</strong>!</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%F0%9F%92%BB-PC-User-(Step-1)">&#128187; PC User (Step 1)<a class="anchor-link" href="#%F0%9F%92%BB-PC-User-(Step-1)">&#182;</a></h3><ul>
+<li><strong>Enable Features</strong>: Open &quot;Turn Windows features on or off&quot;.</li>
+<li>Check these two features (<strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>) before installing WSL</li>
+</ul>
+<p><img src="img/OS/win_config.png" alt="Picture of the Beach -50width" /></p>
+<ul>
+<li>Figure from <a href="https://gailloty.net/Rstudio-server-windows/install-wsl-2-and-configure-it-on-windows-10.html">Setup Guide</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%F0%9F%92%BB-PC-User-(Step-2)">&#128187; PC User (Step 2)<a class="anchor-link" href="#%F0%9F%92%BB-PC-User-(Step-2)">&#182;</a></h3><ul>
+<li><strong>Install Linux</strong>: Open PowerShell.exe (as administrator).</li>
+<li>Type the following command and then restart your machine:<div class="highlight"><pre><span></span>wsl<span class="w"> </span>--install
+</pre></div>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command">Official Microsoft Documentation</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%F0%9F%9B%A0%EF%B8%8F-Troubleshooting-WSL">&#128736;&#65039; Troubleshooting WSL<a class="anchor-link" href="#%F0%9F%9B%A0%EF%B8%8F-Troubleshooting-WSL">&#182;</a></h3><ul>
+<li>If <code>wsl --install</code> doesn’t work, update WSL first by typing:<div class="highlight"><pre><span></span>wsl<span class="w"> </span>--update
+</pre></div>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/troubleshooting">Troubleshooting Guide</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="4.-commonly-used-commands">4. commonly-used commands<a class="anchor-link" href="#4.-commonly-used-commands">&#182;</a></h1><p><img src="img/OS/navigation.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="5.-useful-tips-in-Linux">5. useful tips in Linux<a class="anchor-link" href="#5.-useful-tips-in-Linux">&#182;</a></h2><p><img src="img/OS/tips.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="6.-command-man-(short-for-MANual-page)">6. command <strong><code>man</code></strong> (short for MANual page)<a class="anchor-link" href="#6.-command-man-(short-for-MANual-page)">&#182;</a></h1><ul>
+<li><code>man</code> command in Linux is used to display the user manual of any command.</li>
+<li>for example, <code>man ls</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>useful tips</strong></p>
+<ul>
+<li>Hit <strong>return/enter</strong> to advance one line at a time</li>
+<li>Hit <strong>space</strong> to advance one page at a time</li>
+<li>Hit <strong>Ctrl-f/Ctrl-b</strong> to forward/backward one page at a time</li>
+<li>Hit <strong>q</strong> to quit</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="7.-Mastering-I/O-redirection-using-ls">7. Mastering I/O redirection using <strong><code>ls</code></strong><a class="anchor-link" href="#7.-Mastering-I/O-redirection-using-ls">&#182;</a></h1><p><img src="img/OS/io.png" alt="Picture of the Beach -50width" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Difference-between-%E2%80%9C%3E%E2%80%9D-and-%E2%80%9C%3E%3E%E2%80%9D">Difference between &#8220;&gt;&#8221; and &#8220;&gt;&gt;&#8221;<a class="anchor-link" href="#Difference-between-%E2%80%9C%3E%E2%80%9D-and-%E2%80%9C%3E%3E%E2%80%9D">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## ```ls``` is short for “list”.</span>
+<span class="c1">## use it to list files and folders in current (or target) directory</span>
+
+<span class="c1">## use &gt; to output into a file</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>&gt;<span class="w"> </span>LIST
+
+<span class="c1">## use ```cat``` (short for concatenate) file to print the file</span>
+<span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>LIST
+
+<span class="c1">## use &gt;&gt; to append to a file</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>&gt;&gt;<span class="w"> </span>LIST
+<span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="use-2%3E-output-error-message-to-a-file">use 2&gt; output error message to a file<a class="anchor-link" href="#use-2%3E-output-error-message-to-a-file">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># output the standard ouput into STDOUT</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>none<span class="w"> </span>&gt;<span class="w"> </span>STDOUT
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>ls: none: No such file or directory
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># STDOUT is empty</span>
+<span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>STDOUT
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># output the standard error into STDERR</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>none<span class="w"> </span>&gt;<span class="w"> </span>STDOUT<span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>STDERR
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>STDERR
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>ls: none: No such file or directory
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># assign 2 into 1, and then output into allinone file</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>none<span class="w"> </span>&gt;<span class="w"> </span>STDALL<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>STDALL
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>ls: none: No such file or directory
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Precision-listing:-more-about-ls-options">Precision listing: more about <code>ls</code> options<a class="anchor-link" href="#Precision-listing:-more-about-ls-options">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -l</span>
+<span class="c1">#   List in long format.</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-l
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total 888
+-rw-r--r--   1 yngong  staff     152 Mar 11 06:00 LIST
+-rw-r--r--@  1 yngong  staff    2342 Mar  3 14:54 README.md
+-rwxr-xr-x@  1 yngong  staff     911 Mar 11 08:53 <span class="ansi-green-fg">convert.sh</span>
+drwx------   5 yngong  staff     160 Mar 11 06:20 <span class="ansi-cyan-fg">img</span>
+-rw-r--r--   1 yngong  staff   52736 Mar 11 08:51 linux_master.ipynb
+-rw-r--r--   1 yngong  staff  381780 Mar 11 08:51 linux_master.slides.html
+-rw-r--r--   1 yngong  staff    3013 Mar 10 22:18 premium_slides.css
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:12 <span class="ansi-cyan-fg">wiki</span>
+drwx------  11 yngong  staff     352 Mar 11 06:27 <span class="ansi-cyan-fg">workspace</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -a</span>
+<span class="c1">#    do not ignore hidden entries starting with .</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-la
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total 904
+drwx------  15 yngong  staff     480 Mar 11 08:51 <span class="ansi-cyan-fg">.</span>
+drwxr-xr-x  49 yngong  staff    1568 Mar  6 09:32 <span class="ansi-cyan-fg">..</span>
+-rw-r--r--@  1 yngong  staff    6148 Mar 11 05:39 .DS_Store
+drwxr-xr-x  12 yngong  staff     384 Mar  3 14:57 <span class="ansi-cyan-fg">.git</span>
+drwx------   9 yngong  staff     288 Mar 10 22:53 <span class="ansi-cyan-fg">.ipynb_checkpoints</span>
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:47 <span class="ansi-cyan-fg">.venv</span>
+-rw-r--r--   1 yngong  staff     152 Mar 11 06:00 LIST
+-rw-r--r--@  1 yngong  staff    2342 Mar  3 14:54 README.md
+-rwxr-xr-x@  1 yngong  staff     911 Mar 11 08:53 <span class="ansi-green-fg">convert.sh</span>
+drwx------   5 yngong  staff     160 Mar 11 06:20 <span class="ansi-cyan-fg">img</span>
+-rw-r--r--   1 yngong  staff   52736 Mar 11 08:51 linux_master.ipynb
+-rw-r--r--   1 yngong  staff  381780 Mar 11 08:51 linux_master.slides.html
+-rw-r--r--   1 yngong  staff    3013 Mar 10 22:18 premium_slides.css
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:12 <span class="ansi-cyan-fg">wiki</span>
+drwx------  11 yngong  staff     352 Mar 11 06:27 <span class="ansi-cyan-fg">workspace</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -t</span>
+<span class="c1">#    Sort by time modified (most recently modified first)</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-lat
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total 904
+drwx------  15 yngong  staff     480 Mar 11 08:53 <span class="ansi-cyan-fg">.</span>
+-rw-r--r--   1 yngong  staff  381829 Mar 11 08:53 linux_master.slides.html
+-rwxr-xr-x@  1 yngong  staff     911 Mar 11 08:53 <span class="ansi-green-fg">convert.sh</span>
+-rw-r--r--   1 yngong  staff   52736 Mar 11 08:51 linux_master.ipynb
+drwx------  11 yngong  staff     352 Mar 11 06:27 <span class="ansi-cyan-fg">workspace</span>
+drwx------   5 yngong  staff     160 Mar 11 06:20 <span class="ansi-cyan-fg">img</span>
+-rw-r--r--   1 yngong  staff     152 Mar 11 06:00 LIST
+-rw-r--r--@  1 yngong  staff    6148 Mar 11 05:39 .DS_Store
+drwx------   9 yngong  staff     288 Mar 10 22:53 <span class="ansi-cyan-fg">.ipynb_checkpoints</span>
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:47 <span class="ansi-cyan-fg">.venv</span>
+-rw-r--r--   1 yngong  staff    3013 Mar 10 22:18 premium_slides.css
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:12 <span class="ansi-cyan-fg">wiki</span>
+drwxr-xr-x  49 yngong  staff    1568 Mar  6 09:32 <span class="ansi-cyan-fg">..</span>
+drwxr-xr-x  12 yngong  staff     384 Mar  3 14:57 <span class="ansi-cyan-fg">.git</span>
+-rw-r--r--@  1 yngong  staff    2342 Mar  3 14:54 README.md
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -r</span>
+<span class="c1">#    Reverse the order of the sort to get reverse lexicographical order</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-latr
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total 904
+-rw-r--r--@  1 yngong  staff    2342 Mar  3 14:54 README.md
+drwxr-xr-x  12 yngong  staff     384 Mar  3 14:57 <span class="ansi-cyan-fg">.git</span>
+drwxr-xr-x  49 yngong  staff    1568 Mar  6 09:32 <span class="ansi-cyan-fg">..</span>
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:12 <span class="ansi-cyan-fg">wiki</span>
+-rw-r--r--   1 yngong  staff    3013 Mar 10 22:18 premium_slides.css
+drwxr-xr-x   7 yngong  staff     224 Mar 10 22:47 <span class="ansi-cyan-fg">.venv</span>
+drwx------   9 yngong  staff     288 Mar 10 22:53 <span class="ansi-cyan-fg">.ipynb_checkpoints</span>
+-rw-r--r--@  1 yngong  staff    6148 Mar 11 05:39 .DS_Store
+-rw-r--r--   1 yngong  staff     152 Mar 11 06:00 LIST
+drwx------   5 yngong  staff     160 Mar 11 06:20 <span class="ansi-cyan-fg">img</span>
+drwx------  11 yngong  staff     352 Mar 11 06:27 <span class="ansi-cyan-fg">workspace</span>
+-rw-r--r--   1 yngong  staff   52736 Mar 11 08:51 linux_master.ipynb
+-rwxr-xr-x@  1 yngong  staff     911 Mar 11 08:53 <span class="ansi-green-fg">convert.sh</span>
+-rw-r--r--   1 yngong  staff  381829 Mar 11 08:53 linux_master.slides.html
+drwx------  15 yngong  staff     480 Mar 11 08:53 <span class="ansi-cyan-fg">.</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -h</span>
+<span class="c1">#    When used with the -l option, use unit suffixes: Byte, Kilobyte,</span>
+<span class="c1">#    Megabyte, Gigabyte, Terabyte and Petabyte</span>
+<span class="c1"># for example, this option shows linux_shell.ipynb in 25K, not 25757</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-latrh
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>total 904
+-rw-r--r--@  1 yngong  staff   2.3K Mar  3 14:54 README.md
+drwxr-xr-x  12 yngong  staff   384B Mar  3 14:57 <span class="ansi-cyan-fg">.git</span>
+drwxr-xr-x  49 yngong  staff   1.5K Mar  6 09:32 <span class="ansi-cyan-fg">..</span>
+drwxr-xr-x   7 yngong  staff   224B Mar 10 22:12 <span class="ansi-cyan-fg">wiki</span>
+-rw-r--r--   1 yngong  staff   2.9K Mar 10 22:18 premium_slides.css
+drwxr-xr-x   7 yngong  staff   224B Mar 10 22:47 <span class="ansi-cyan-fg">.venv</span>
+drwx------   9 yngong  staff   288B Mar 10 22:53 <span class="ansi-cyan-fg">.ipynb_checkpoints</span>
+-rw-r--r--@  1 yngong  staff   6.0K Mar 11 05:39 .DS_Store
+-rw-r--r--   1 yngong  staff   152B Mar 11 06:00 LIST
+drwx------   5 yngong  staff   160B Mar 11 06:20 <span class="ansi-cyan-fg">img</span>
+drwx------  11 yngong  staff   352B Mar 11 06:27 <span class="ansi-cyan-fg">workspace</span>
+-rw-r--r--   1 yngong  staff    52K Mar 11 08:51 linux_master.ipynb
+-rwxr-xr-x@  1 yngong  staff   911B Mar 11 08:53 <span class="ansi-green-fg">convert.sh</span>
+-rw-r--r--   1 yngong  staff   373K Mar 11 08:53 linux_master.slides.html
+drwx------  15 yngong  staff   480B Mar 11 08:53 <span class="ansi-cyan-fg">.</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="8.-file-and-folder-permissions">8. file and folder permissions<a class="anchor-link" href="#8.-file-and-folder-permissions">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="img/OS/ls.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ten-letters-and-dashes-indicate-the-permissions">ten letters and dashes indicate the permissions<a class="anchor-link" href="#ten-letters-and-dashes-indicate-the-permissions">&#182;</a></h2><p><img src="img/OS/permissions.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="convert-permission-code">convert permission code<a class="anchor-link" href="#convert-permission-code">&#182;</a></h2><p><img src="img/OS/chmod.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="change-permission">change permission<a class="anchor-link" href="#change-permission">&#182;</a></h2><ul>
+<li>change permission using <code>chmod</code> (short for change mode)</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># change the permission of list file from 644 to 755</span>
+<span class="c1">#####</span>
+<span class="c1">## create a LIST file first</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>&gt;<span class="w"> </span>LIST
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-rw-r--r--@ 1 yngong  staff  459 Oct 12 22:53 LIST
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-rwxr-xr-x@ 1 yngong  staff  459 Oct 12 22:53 <span class="ansi-green-fg">LIST</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="9.-vi-editor">9. vi editor<a class="anchor-link" href="#9.-vi-editor">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong><code>vi</code></strong> is the most popular and basic text editor on Linux-like system. <strong>Three editing modes</strong>: 1. command mode (full screen, by default); 2. insert mode (full screen); 3. command-line mode (one working line)</li>
+</ul>
+<p><img src="img/OS/vi.png" alt="Picture of the Beach -50width" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="try-the-followings-to-enter-insert-mode">try the followings to enter insert mode<a class="anchor-link" href="#try-the-followings-to-enter-insert-mode">&#182;</a></h2><ul>
+<li>i: insert before cursor</li>
+<li>I: insert at the beginning of line</li>
+<li>a: append after cursor</li>
+<li>A: append at end of line</li>
+<li>o: open new line below current line</li>
+<li>O: open new line above current line</li>
+<li>press ESC to leave the insert mode</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="command-line-mode">command-line mode<a class="anchor-link" href="#command-line-mode">&#182;</a></h2><ul>
+<li>press *<strong>shift and :</strong>* to get a command-line prompt <strong>:</strong> at the bottom</li>
+<li><code>:wq</code>: exit and save changes (w = write, q = quit)</li>
+<li><code>:q!</code>: exit without saving changes (! = force quitting by neglecting changes)</li>
+<li><code>:w filename</code>: write to a new filename</li>
+<li><code>:w! filename</code>: force write to a new filename</li>
+<li>delete <code>:</code> or press ESC twice to get back to full-screen command mode</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="delete-in-command-mode">delete in command mode<a class="anchor-link" href="#delete-in-command-mode">&#182;</a></h2><ul>
+<li>x: delete character under cursor</li>
+<li>dd: delete one line under cursor</li>
+<li>dw: delete till the end of this word</li>
+<li>db: delete characters in this word before</li>
+<li><strong>press u immediately to undo the deletion</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="search-and-replace-in-command-line-mode">search and replace in command-line mode<a class="anchor-link" href="#search-and-replace-in-command-line-mode">&#182;</a></h2><ul>
+<li>/string: Search for string</li>
+<li>enter <code>/</code> alone followed by return will repeatly search</li>
+<li>s/string1/string2: Replace string1 with string2</li>
+<li>s/string1/string2/g: Replace all string1 with string2 in the current line.</li>
+<li>%s/string1/string2/g: Replace string1 with string2 in the entire document.</li>
+<li>set nu : display line numbers</li>
+<li>set nonu :  hide the line numbers</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Go-to-specific-line-and-delete-lines">Go to specific line and delete lines<a class="anchor-link" href="#Go-to-specific-line-and-delete-lines">&#182;</a></h2><ul>
+<li>go to line 3: type <code>:3</code> in command-line mode or type <code>3G</code> in command mode</li>
+<li>delete from line number 3 to 5 by typing <code>:3,5d</code></li>
+<li>delete from line number 3 to end of file by typing <code>:3,$d</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="10.-sed-(short-for-Stream-EDitor)-to-find-and-replace-text">10. <strong><code>sed</code></strong> (short for Stream EDitor) to find and replace text<a class="anchor-link" href="#10.-sed-(short-for-Stream-EDitor)-to-find-and-replace-text">&#182;</a></h1><p><img src="img/OS/sed.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## similar option in vi, e.g., s/string1/string2/g </span>
+<span class="c1">## to replace string1 with string2 in the entire document</span>
+
+<span class="o">!</span><span class="w"> </span>ls
+<span class="o">!</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;------ before and after ------ &quot;</span>
+<span class="o">!</span><span class="w"> </span>ls<span class="w"> </span>&gt;<span class="w"> </span>LIST
+<span class="o">!</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/linux/os/g&#39;</span><span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>LIST                     <span class="ansi-cyan-fg">img</span>                      premium_slides.css
+README.md                linux_master.ipynb       <span class="ansi-cyan-fg">wiki</span>
+<span class="ansi-green-fg">convert.sh</span>               linux_master.slides.html <span class="ansi-cyan-fg">workspace</span>
+------ before and after ------ 
+LIST
+README.md
+<span class="ansi-green-fg">convert.sh</span>
+<span class="ansi-cyan-fg">img</span>
+os_master.ipynb
+os_master.slides.html
+premium_slides.css
+<span class="ansi-cyan-fg">wiki</span>
+<span class="ansi-cyan-fg">workspace</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="11.-print-and-count-file-context">11. print and count file context<a class="anchor-link" href="#11.-print-and-count-file-context">&#182;</a></h1><p><img src="img/OS/cat.png" alt="Picture of the Beach -fullwidth" /></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>head<span class="w"> </span>-3<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>LIST
+README.md
+<span class="ansi-green-fg">convert.sh</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>tail<span class="w"> </span>-3<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>premium_slides.css
+<span class="ansi-cyan-fg">wiki</span>
+<span class="ansi-cyan-fg">workspace</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="w"> </span>LIST
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>       9 LIST
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="12.-use-grep-and-wc-to-count-sequences">12. use <code>grep</code> and <code>wc</code> to count sequences<a class="anchor-link" href="#12.-use-grep-and-wc-to-count-sequences">&#182;</a></h1><ul>
+<li>copy a fasta file from google drive (<a href="https://drive.google.com/file/d/1xQRHVKzlVtHV4vGOxAulfJ2YN5OVDx6r/view?usp=sharing">https://drive.google.com/file/d/1xQRHVKzlVtHV4vGOxAulfJ2YN5OVDx6r/view?usp=sharing</a>)</li>
+<li>grep (short for Globally search a Regular Expression and Print)<ul>
+<li>a command-line utility for searching plain-text data sets for lines that match a <strong>regular expression</strong></li>
+<li>from <a href="https://en.wikipedia.org/wiki/Grep">https://en.wikipedia.org/wiki/Grep</a></li>
+</ul>
+</li>
+<li>wc (short for word count)<ul>
+<li>-l print the line count</li>
+<li>-w print the word count</li>
+<li>from <a href="https://en.wikipedia.org/wiki/Wc_(Unix">https://en.wikipedia.org/wiki/Wc_(Unix</a>)</li>
+</ul>
+</li>
+<li>pipe <code>|</code>:  The pipe is used to combine two or more commands. The output of the first command acts as input to the next one.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># Question 1. How many sequences in a fasta/fastq file?</span>
+<span class="c1"># Try to grep header lines and wc lines, and get a count of 1000</span>
+<span class="c1">#####</span>
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>    1000
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># only print the first or last 3 sequences</span>
+<span class="c1">#####</span>
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-3
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&gt;hCoV-19/USA/CA-CZB-2021/2020 | EPI_ISL_486273 | 2020-05-04 | NorthAmerica
+&gt;hCoV-19/Wuhan/WIV04/2019 | EPI_ISL_402124 | 2019-12-30 | China
+&gt;hCoV-19/India/GJ-GBRC99/2020 | EPI_ISL_450788 | 2020-05-06 | Asia
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-3
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&gt;hCoV-19/Peru/LIM-INS-155/2020 | EPI_ISL_536548 | 2020-03-19 | SouthAmerica
+&gt;hCoV-19/Scotland/EDB6157/2020 | EPI_ISL_473893 | 2020-05-14 | Europe
+&gt;hCoV-19/Switzerland/BS-ETHZ-110001/2020 | EPI_ISL_486443 | 2020-04-01 | Europe
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Reminder: grep is a case insensitive search</strong></p>
+<ul>
+<li>Differences among the following commands?</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>Usa<span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="w"> </span>#--ignore-case
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span>USA<span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span>usa<span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>     211
+     211
+       0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="use-sed-to-replace-the-separator">use <code>sed</code> to replace the separator<a class="anchor-link" href="#use-sed-to-replace-the-separator">&#182;</a></h2><ul>
+<li>Usage:<ul>
+<li>sed 's/regexp/replacement/g' inputFileName &gt; outputFileName</li>
+<li>s: substitution; g: global</li>
+<li>Tips: space is a char; you need a backslash &quot;\&quot; for slash &quot;/&quot; in sed</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># toy example: replace xyz with abc</span>
+<span class="o">!</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>xyz<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/x/a/g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/y/b/g&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/z/c/g&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>abc
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Current format (start with &quot;&gt;&quot; and split by a pipe &quot;|&quot;)<ul>
+<li>e.g., &gt;hCoV-19/USA/CA-CZB-2021/2020 | EPI_ISL_486273 | 2020-05-04 | NorthAmerica</li>
+<li>virus/location/strain/year | accession_number | collection_date | area</li>
+</ul>
+</li>
+<li>Expected format (split by a semicolon without the space)<ul>
+<li>virus,location,strain,year,accession_number,collection_date,area</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># double check metadata</span>
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-1
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&gt;hCoV-19/USA/CA-CZB-2021/2020 | EPI_ISL_486273 | 2020-05-04 | NorthAmerica
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># Step 1. create CSV file</span>
+<span class="c1">#####</span>
+<span class="o">!</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;virus,location,strain,year,accession_number,collection_date,area&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>demo.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># Step 2. retrieve meta data and stream editor</span>
+<span class="c1"># current format: &gt;hCoV-19/USA/CA-CZB-2021/2020 </span>
+<span class="c1"># | EPI_ISL_486273 | 2020-05-04 | NorthAmerica</span>
+<span class="c1">#</span>
+<span class="c1"># expected format: hCoV-19;USA;CA-CZB-2021;2020;</span>
+<span class="c1"># EPI_ISL_486273;2020-05-04;NorthAmerica</span>
+<span class="c1">#</span>
+<span class="c1"># 1st sed: remove &quot;&gt;&quot;</span>
+<span class="c1"># 2nd sed: replace &quot;/&quot; to &quot; | &quot;</span>
+<span class="c1"># 3rd sed: replace &quot; | &quot; to &quot;,&quot;</span>
+<span class="c1">#####</span>
+<span class="o">!</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="w"> </span>demo.fas<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/&gt;//g;s/\// | /g;s/ | /,/g&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>demo.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#####</span>
+<span class="c1"># final check</span>
+<span class="c1">#####</span>
+<span class="o">!</span><span class="w"> </span>head<span class="w"> </span>-3<span class="w"> </span>demo.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>virus,location,strain,year,accession_number,collection_date,area
+hCoV-19,USA,CA-CZB-2021,2020,EPI_ISL_486273,2020-05-04,NorthAmerica
+hCoV-19,Wuhan,WIV04,2019,EPI_ISL_402124,2019-12-30,China
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Outline. Part 2</strong></p>
+<ol>
+<li>Shell scripting</li>
+<li>Difference between <code>sh</code> vs <code>bash</code></li>
+<li>Difference Between <code>[[</code> vs <code>[</code> vs <code>(</code> vs <code>((</code> in Bash</li>
+<li>Practice. Sorting FASTA Sequences by Length in Linux</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="1.-Shell-scripting">1. Shell scripting<a class="anchor-link" href="#1.-Shell-scripting">&#182;</a></h1><ul>
+<li><strong>Shell scripts</strong> allow several commands that would be <strong>entered manually at a command-line interface</strong> to be <strong>executed automatically</strong>, and without having to wait for a user to trigger each stage of the sequence.</li>
+<li>components<ul>
+<li>all of Linux commands</li>
+<li>variables</li>
+<li>looping</li>
+<li>any 3rd-party or user developed programs that can be executed on Linux, like python, R, java</li>
+</ul>
+</li>
+<li>from <a href="https://en.wikipedia.org/wiki/Shell_script">https://en.wikipedia.org/wiki/Shell_script</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="The-first-shell-script">The first shell script<a class="anchor-link" href="#The-first-shell-script">&#182;</a></h2><ol>
+<li>Use <code>touch</code> and <code>vi</code> to create and edit a new file</li>
+<li>Type Shebeng <code>#!/bin/bash</code></li>
+<li>Type something about you</li>
+<li>Type the <code>read</code> command to take the input from the keyborard and assign to the INPUT variable</li>
+<li><strong>Please download all of scripts from shell script folder <a href="https://drive.google.com/drive/folders/1sD1llq5nsidFSriCjlJJeuPR8kzYvfNG?usp=drive_link">https://drive.google.com/drive/folders/1sD1llq5nsidFSriCjlJJeuPR8kzYvfNG?usp=drive_link</a></strong></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Author : Zac Gong</span>
+<span class="c1"># Affiliation: CGU</span>
+<span class="c1"># The first shell script follows here:</span>
+
+<span class="n">echo</span> <span class="s2">&quot;What is your name?&quot;</span>
+<span class="n">read</span> <span class="n">INPUT</span>
+<span class="n">echo</span> <span class="s2">&quot;Hello, $INPUT. Good to see you.&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Type the file name</span>
+<span class="o">!</span><span class="w"> </span>./input_name.sh
+<span class="c1"># or bash file_name</span>
+<span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./input_name.sh
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Shell-Basic-Operators">Shell Basic Operators<a class="anchor-link" href="#Shell-Basic-Operators">&#182;</a></h2><ul>
+<li><strong>Arithmetic Operators</strong> (Kahoot)</li>
+</ul>
+<p><img src="img/shell/arithmetic.png" alt="Picture of the Beach -100width" />(<a href="https://drive.google.com/uc?export=view&amp;id=1Com2VKv8SoMYyf0bmRp7Wpp8OsiqyTe_">https://drive.google.com/uc?export=view&amp;id=1Com2VKv8SoMYyf0bmRp7Wpp8OsiqyTe_</a>)</p>
+<ul>
+<li>All the following tables from <a href="https://www.tutorialspoint.com/unix/unix-basic-operators.htm">https://www.tutorialspoint.com/unix/unix-basic-operators.htm</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="n">val</span><span class="o">=</span><span class="err">`</span><span class="n">expr</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="err">`</span>
+<span class="n">echo</span> <span class="s2">&quot;Sum : $val&quot;</span>
+
+<span class="c1">## The above script will generate the following result</span>
+<span class="c1">## Sum : 2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./arith_opt.sh
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Relational-Operators">Relational Operators<a class="anchor-link" href="#Relational-Operators">&#182;</a></h3><ul>
+<li>Assume variable a holds 10 and variable b holds 20</li>
+</ul>
+<p><img src="img/shell/relational.png" alt="Picture of the Beach -100width" />(<a href="https://drive.google.com/uc?export=view&amp;id=1Cns9fo-xTipR7Mf7GKpszmqX1Z8vFFc9">https://drive.google.com/uc?export=view&amp;id=1Cns9fo-xTipR7Mf7GKpszmqX1Z8vFFc9</a>)</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="String-Operators">String Operators<a class="anchor-link" href="#String-Operators">&#182;</a></h3><ul>
+<li>Assume variable a holds 10 and variable b holds 20</li>
+</ul>
+<p><img src="img/shell/string.png" alt="Picture of the Beach -100width" />(<a href="https://drive.google.com/uc?export=view&amp;id=1Cnw5iac4DHpxRBwMC2k0qRjDYe9UPTLp">https://drive.google.com/uc?export=view&amp;id=1Cnw5iac4DHpxRBwMC2k0qRjDYe9UPTLp</a>)</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Boolean-Operators">Boolean Operators<a class="anchor-link" href="#Boolean-Operators">&#182;</a></h3><ul>
+<li>Assume variable a holds 10 and variable b holds 20</li>
+</ul>
+<p><img src="img/shell/boolean.png" alt="Picture of the Beach -100width" />(<a href="https://drive.google.com/uc?export=view&amp;id=1CoC1OZKhgZ0BTA492LeEFmu8z1LV_VI3">https://drive.google.com/uc?export=view&amp;id=1CoC1OZKhgZ0BTA492LeEFmu8z1LV_VI3</a>)</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="File-Test-Operators">File Test Operators<a class="anchor-link" href="#File-Test-Operators">&#182;</a></h3><ul>
+<li>Assume variable a holds 10 and variable b holds 20</li>
+</ul>
+<p><img src="img/shell/file.png" alt="Picture of the Beach -100width" />(<a href="https://drive.google.com/uc?export=view&amp;id=1Cnua-EdDnQFd5w2UiXABTbst3pCnv3Du">https://drive.google.com/uc?export=view&amp;id=1Cnua-EdDnQFd5w2UiXABTbst3pCnv3Du</a>)</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Shell-Decision-Making">Shell Decision Making<a class="anchor-link" href="#Shell-Decision-Making">&#182;</a></h3><ul>
+<li>if...else is a commonly-used, decision-making statement.<ul>
+<li>if...fi statement</li>
+<li>if...else...fi statement</li>
+<li>if...elif...else...fi statement</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Author : Zac Gong</span>
+<span class="c1"># Affiliation: CGU</span>
+<span class="c1"># The first shell script follows here:</span>
+
+<span class="n">echo</span> <span class="s2">&quot;What is your name?&quot;</span>
+<span class="n">read</span> <span class="n">INPUT</span>
+
+<span class="k">if</span> <span class="p">[</span> <span class="s2">&quot;$INPUT&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">];</span> <span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;Null input. Program stopped.&quot;</span>
+    <span class="n">exit</span>
+<span class="k">else</span>
+    <span class="n">echo</span> <span class="s2">&quot;Hello, $INPUT. Good to see you.&quot;</span>
+<span class="n">fi</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./input_name_decision_making.sh
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="use-getopts-to-parse-command-line-arguments-and-display-your-input-and-output-file-names">use getopts to parse command-line arguments and display your input and output file names<a class="anchor-link" href="#use-getopts-to-parse-command-line-arguments-and-display-your-input-and-output-file-names">&#182;</a></h2><ul>
+<li>getopts command: retrieve options and their arguments</li>
+<li>for example, two required arguments as input and output file names</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./print_io.sh<span class="w"> </span>-i<span class="w"> </span>input.fas<span class="w"> </span>-o<span class="w"> </span>output.fas
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Retrieve file names and print out</span>
+
+<span class="c1">### get args</span>
+<span class="k">while</span> <span class="n">getopts</span> <span class="n">i</span><span class="p">:</span><span class="n">o</span><span class="p">:</span> <span class="n">option</span>
+<span class="n">do</span>
+<span class="k">case</span> <span class="s2">&quot;$</span><span class="si">{option}</span><span class="s2">&quot;</span>
+<span class="ow">in</span>
+<span class="n">i</span><span class="p">)</span> <span class="n">i</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OPTARG</span><span class="p">};;</span>
+<span class="n">o</span><span class="p">)</span> <span class="n">o</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OPTARG</span><span class="p">};;</span>
+<span class="n">esac</span>
+<span class="n">done</span>
+
+<span class="c1">### check args</span>
+<span class="k">if</span> <span class="p">[</span> <span class="s2">&quot;$i&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">-</span><span class="n">o</span> <span class="s2">&quot;$o&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="p">]</span>
+<span class="n">then</span>
+	<span class="n">echo</span> <span class="s2">&quot;Input Error, please make sure&quot;</span>
+	<span class="n">echo</span> <span class="s2">&quot;-i as input file name&quot;</span>
+	<span class="n">echo</span> <span class="s2">&quot;-o as output file name&quot;</span>
+	<span class="n">echo</span> <span class="s2">&quot;Usage: sh printInputOutput.sh -i input.fas -o output.fas&quot;</span>
+	<span class="n">exit</span>
+<span class="n">fi</span>
+
+<span class="n">echo</span> <span class="s2">&quot;input file name: &quot;</span><span class="err">$</span><span class="n">i</span>
+<span class="n">echo</span> <span class="s2">&quot;output file name: &quot;</span><span class="err">$</span><span class="n">o</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Read-a-fasta-file-and-generate-a-CSV-file">Read a fasta file and generate a CSV file<a class="anchor-link" href="#Read-a-fasta-file-and-generate-a-CSV-file">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./generate_csv.sh<span class="w"> </span>-i<span class="w"> </span>input.fas<span class="w"> </span>-o<span class="w"> </span>output.fas
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1">### get args</span>
+<span class="k">while</span> <span class="n">getopts</span> <span class="n">i</span><span class="p">:</span><span class="n">o</span><span class="p">:</span> <span class="n">option</span>
+<span class="n">do</span>
+<span class="k">case</span> <span class="s2">&quot;$</span><span class="si">{option}</span><span class="s2">&quot;</span>
+<span class="ow">in</span>
+<span class="n">i</span><span class="p">)</span> <span class="n">i</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OPTARG</span><span class="p">};;</span>
+<span class="n">o</span><span class="p">)</span> <span class="n">o</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">OPTARG</span><span class="p">};;</span>
+<span class="n">esac</span>
+<span class="n">done</span>
+
+<span class="c1">### check args</span>
+<span class="k">if</span> <span class="p">[</span> <span class="s2">&quot;$i&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="o">-</span><span class="n">o</span> <span class="s2">&quot;$o&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;Input Error, please make sure&quot;</span>
+    <span class="n">echo</span> <span class="s2">&quot;-i as input file name&quot;</span>
+    <span class="n">echo</span> <span class="s2">&quot;-o as output file name&quot;</span>
+    <span class="n">echo</span> <span class="s2">&quot;Usage: bash generate_csv.sh -i input.fas -o output.fas&quot;</span>
+    <span class="n">exit</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">&quot;input file name: &quot;</span><span class="err">$</span><span class="n">i</span>
+<span class="n">echo</span> <span class="s2">&quot;output file name: &quot;</span><span class="err">$</span><span class="n">o</span>
+
+<span class="c1"># step 1. create CSV file</span>
+<span class="n">echo</span> <span class="s2">&quot;virus,location,strain,year,accession_number,collection_date,area&quot;</span> <span class="o">&gt;</span> <span class="err">$</span><span class="n">o</span>
+<span class="c1"># step 2. retrieve meta data and stream editor</span>
+<span class="n">grep</span> <span class="s2">&quot;&gt;&quot;</span> <span class="err">$</span><span class="n">i</span> <span class="o">|</span> <span class="n">sed</span> <span class="s1">&#39;s/&gt;//g&#39;</span> <span class="o">|</span> <span class="n">sed</span> <span class="s1">&#39;s/\// | /g&#39;</span> <span class="o">|</span> <span class="n">sed</span> <span class="s1">&#39;s/ | /,/g&#39;</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="n">o</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section ><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># execute this shell script</span>
+<span class="o">!</span><span class="w"> </span>bash<span class="w"> </span>./generate_csv.sh<span class="w"> </span>-i<span class="w"> </span>demo.fas<span class="w"> </span>-o<span class="w"> </span>metadata.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>input file name: demo.fas
+output file name: metadata.csv
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>head<span class="w"> </span>-3<span class="w"> </span>metadata.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>virus,location,strain,year,accession_number,collection_date,area
+hCoV-19,USA,CA-CZB-2021,2020,EPI_ISL_486273,2020-05-04,NorthAmerica
+hCoV-19,Wuhan,WIV04,2019,EPI_ISL_402124,2019-12-30,China
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section ><section >
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="2.-Difference-between-sh-vs-bash">2. Difference between <code>sh</code> vs <code>bash</code><a class="anchor-link" href="#2.-Difference-between-sh-vs-bash">&#182;</a></h1><p><code>sh</code> and <code>bash</code> are both command-line interpreters in Unix-like systems, but there are some key differences:</p>
 <h2 id="1.-Basic-Functionality:">1. Basic Functionality:<a class="anchor-link" href="#1.-Basic-Functionality:">&#182;</a></h2><ul>
 <li><strong><code>sh</code> (Shell)</strong>: Originally the standard shell in UNIX systems, referring to the <strong>Bourne Shell</strong>. It provides basic command-line interface and scripting features such as variables, conditionals, loops, etc.</li>
 <li><strong><code>bash</code> (Bourne Again Shell)</strong>: A shell developed by the GNU project. It's compatible with <code>sh</code> but extends functionality with features like improved scripting capabilities, better error handling, and more interactive features.</li>
@@ -14755,7 +16873,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Fixing-Shell-History-Navigation-and-Backspace-Issues-in-Linux">Fixing Shell History Navigation and Backspace Issues in Linux<a class="anchor-link" href="#Fixing-Shell-History-Navigation-and-Backspace-Issues-in-Linux">&#182;</a></h1><h2 id="Issue-1:-Arrow-Keys-Showing-%5E%5B%5BA-%5E%5B%5BB-Instead-of-Navigating-History">Issue 1: Arrow Keys Showing <code>^[[A ^[[B</code> Instead of Navigating History<a class="anchor-link" href="#Issue-1:-Arrow-Keys-Showing-%5E%5B%5BA-%5E%5B%5BB-Instead-of-Navigating-History">&#182;</a></h2><h3 id="Cause:"><strong>Cause:</strong><a class="anchor-link" href="#Cause:">&#182;</a></h3><p>This issue usually occurs when the shell is not interpreting key sequences correctly, often due to:</p>
+<h1 id="Fixing-Shell-History-Navigation-and-Backspace-Issues-in-Linux">Fixing Shell History Navigation and Backspace Issues in Linux<a class="anchor-link" href="#Fixing-Shell-History-Navigation-and-Backspace-Issues-in-Linux">&#182;</a></h1><h2 id="Issue:-Arrow-Keys-Showing-%5E%5B%5BA-%5E%5B%5BB-Instead-of-Navigating-History">Issue: Arrow Keys Showing <code>^[[A ^[[B</code> Instead of Navigating History<a class="anchor-link" href="#Issue:-Arrow-Keys-Showing-%5E%5B%5BA-%5E%5B%5BB-Instead-of-Navigating-History">&#182;</a></h2><h3 id="Cause:"><strong>Cause:</strong><a class="anchor-link" href="#Cause:">&#182;</a></h3><p>This issue usually occurs when the shell is not interpreting key sequences correctly, often due to:</p>
 <ul>
 <li>The wrong shell being used (<code>sh</code> instead of <code>bash</code>).</li>
 <li>An incorrect or missing terminal configuration.</li>
@@ -14786,7 +16904,7 @@ chsh<span class="w"> </span>-s<span class="w"> </span>/bin/bash
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="2.-Difference-Between-%5B%5B-vs-%5B-vs-(-vs-((-in-Bash">2. Difference Between <code>[[</code> vs <code>[</code> vs <code>(</code> vs <code>((</code> in Bash<a class="anchor-link" href="#2.-Difference-Between-%5B%5B-vs-%5B-vs-(-vs-((-in-Bash">&#182;</a></h1><p>The operators <code>[[</code>, <code>[</code>, <code>(</code>, and <code>((</code> in Bash are used for different purposes, especially in conditional expressions, arithmetic operations, and control structures. Here's a breakdown of each:</p>
+<h1 id="3.-Difference-Between-%5B%5B-vs-%5B-vs-(-vs-((-in-Bash">3. Difference Between <code>[[</code> vs <code>[</code> vs <code>(</code> vs <code>((</code> in Bash<a class="anchor-link" href="#3.-Difference-Between-%5B%5B-vs-%5B-vs-(-vs-((-in-Bash">&#182;</a></h1><p>The operators <code>[[</code>, <code>[</code>, <code>(</code>, and <code>((</code> in Bash are used for different purposes, especially in conditional expressions, arithmetic operations, and control structures. Here's a breakdown of each:</p>
 
 </div>
 </div>
@@ -14966,7 +17084,7 @@ chsh<span class="w"> </span>-s<span class="w"> </span>/bin/bash
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="3.-Sorting-FASTA-Sequences-by-Length-in-Linux">3. Sorting FASTA Sequences by Length in Linux<a class="anchor-link" href="#3.-Sorting-FASTA-Sequences-by-Length-in-Linux">&#182;</a></h1><h3 id="1.-Convert-Multi-line-Sequences-to-Single-line">1. Convert Multi-line Sequences to Single-line<a class="anchor-link" href="#1.-Convert-Multi-line-Sequences-to-Single-line">&#182;</a></h3><pre><code>&gt;2
+<h1 id="4.-Practice.-Sorting-FASTA-Sequences-by-Length-in-Linux">4. Practice. Sorting FASTA Sequences by Length in Linux<a class="anchor-link" href="#4.-Practice.-Sorting-FASTA-Sequences-by-Length-in-Linux">&#182;</a></h1><h3 id="1.-Convert-Multi-line-Sequences-to-Single-line">1. Convert Multi-line Sequences to Single-line<a class="anchor-link" href="#1.-Convert-Multi-line-Sequences-to-Single-line">&#182;</a></h3><pre><code>&gt;2
 ATCG
 ATCG
 ATCG
@@ -15032,258 +17150,6 @@ ATCGATCGATCGATCG
 </div>
 </div>
 </div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="(Optional)-Using-biopython">(Optional) Using biopython<a class="anchor-link" href="#(Optional)-Using-biopython">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
-<span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
-
-<span class="k">def</span> <span class="nf">sort_fasta_by_length</span><span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="c1"># Read sequences from the input file</span>
-    <span class="n">records</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="s2">&quot;fasta&quot;</span><span class="p">))</span>
-    <span class="c1"># Sort sequences by length</span>
-    <span class="n">records</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">seq</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="n">reverse</span><span class="p">)</span>
-    <span class="c1"># Write sorted sequences to the output file</span>
-    <span class="n">SeqIO</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">records</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="s2">&quot;fasta&quot;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Sort FASTA sequences by length.&quot;</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--input&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Input FASTA file.&quot;</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-o&quot;</span><span class="p">,</span> <span class="s2">&quot;--output&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Output FASTA file.&quot;</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-r&quot;</span><span class="p">,</span> <span class="s2">&quot;--reverse&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Sort in descending order.&quot;</span><span class="p">)</span>
-    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
-    <span class="n">sort_fasta_by_length</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">reverse</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Question-1.-Histogram-of-Sequence-Identities-of-Inter--and-Intra-group">Question 1. Histogram of Sequence Identities of Inter- and Intra-group<a class="anchor-link" href="#Question-1.-Histogram-of-Sequence-Identities-of-Inter--and-Intra-group">&#182;</a></h1><ul>
-<li>Given multiple sets of nucleotide or protein sequences in FASTA format, calculate both <strong>intra-group</strong> and <strong>inter-group</strong> sequence identity, then visualize the results using a histogram.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Expected Result: Fig. 3. Frequency distribution of pairwise identity scores for comparison of VP1 nucleotide (A) and deduced amino acid (B) sequences. from DOI: 10.1128/jvi.73.3.1941-1948.1999</li>
-</ul>
-<p><img src="./jv0391503003.jpeg" alt="My Image" /></p>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Question-2.-Sequence-Identity-Matrix-of-Inter--and-Intra-groups">Question 2. Sequence Identity Matrix of Inter- and Intra-groups<a class="anchor-link" href="#Question-2.-Sequence-Identity-Matrix-of-Inter--and-Intra-groups">&#182;</a></h1><ul>
-<li>Given multiple sets of nucleotide or protein sequences in FASTA format, calculate both <strong>intra-group</strong> and <strong>inter-group</strong> sequence identity, then visualize the results using a matrix.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Expected Result:</li>
-</ul>
-<table>
-<thead>
-<tr>
-  <th>Group</th>
-  <th>Group 1</th>
-  <th>Group 2</th>
-  <th>Group 3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Group 1</td>
-  <td>95-100</td>
-  <td>85-90</td>
-  <td>82-88</td>
-</tr>
-<tr>
-  <td>Group 2</td>
-  <td>-</td>
-  <td>96-100</td>
-  <td>82-88</td>
-</tr>
-<tr>
-  <td>Group 3</td>
-  <td>-</td>
-  <td>-</td>
-  <td>99-100</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>data @ sever 203</li>
-<li>/home/public/question_data/clean/Keeped_*.fasta<ul>
-<li>Keeped_alpha.fasta</li>
-<li>Keeped_beta_combined.fasta</li>
-<li>Keeped_delta.fasta</li>
-<li>Keeped_gamma_combined.fasta</li>
-<li>Keeped_sars2.fasta</li>
-</ul>
-</li>
-<li>Hint: using biopython</li>
-<li>add one option for filtering outliers, e.g., python identity_matrix.py infile outfile cutoff</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Question-3.-Sequence-Identity-Matrix-of-Inter--and-Intra-groups-(specifically-for-the-RdRp-gene-among-different-species)">Question 3. Sequence Identity Matrix of Inter- and Intra-groups (specifically for the RdRp gene among different species)<a class="anchor-link" href="#Question-3.-Sequence-Identity-Matrix-of-Inter--and-Intra-groups-(specifically-for-the-RdRp-gene-among-different-species)">&#182;</a></h2><ol>
-<li><p>load the metadata (as a CSV file) to split fasta files into species level and extracted classification mapping saved to: classification_mapping.csv</p>
-<ul>
-<li><code>python extract_metadata.py alpha.csv</code></li>
-</ul>
-</li>
-<li><p>split fasta file based on classification_mapping.csv</p>
-<ul>
-<li><code>python split_fasta.py alpha.fasta classification_mapping.csv</code></li>
-</ul>
-</li>
-<li><p>select the longest one genome as a coordinate:</p>
-<ul>
-<li><code>python ../find_longest_fasta.py Human_coronavirus_229E.fasta</code></li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="4">
-<li><p>(manually) donwload gene features (as a gff3 file) from NCBI</p>
-</li>
-<li><p>do multiple sequence alignment (MSA)</p>
-</li>
-</ol>
-<pre><code>for i in `ls *.fasta`
-do
-    mkdir `echo $i | cut -d&quot;.&quot; -f1`
-    cd `echo $i | cut -d&quot;.&quot; -f1`
-    cp ../$i ./
-    mafft $i &gt; `echo $i | cut -d&quot;.&quot; -f1`_aligned.fas
-cd ../
-done
-</code></pre>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="6">
-<li><p>split MSA</p>
-<ul>
-<li><code>python extract_genes.py Alphacoronavirus_1.fasta KP849472 KP849472.gff3</code></li>
-<li><code>python extract_genes.py Human_coronavirus_NL63_aligned.fasta MG428704 MG428704.gff3</code></li>
-<li><code>python extract_genes.py Human_coronavirus_229E.fasta KT253271 MF577027.gff3</code></li>
-</ul>
-</li>
-<li><p>remove partial sequences (e.g., &lt;97% of S gene)</p>
-<ul>
-<li><code>python filter_low_quality_seq.py S.fasta 3</code></li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-</div></section></section><section ><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="8">
-<li>calculate sequence identities, and plot identity histogram and matrix<ul>
-<li><code>python identity_histogram.py split_fasta/Bat_coronavirus_HKU10/qualified.fasta split_fasta/Rhinolophus_bat_coronavirus_HKU2/qualified.fasta split_fasta/Wencheng_Sm_shrew_coronavirus/qualified.fasta</code></li>
-<li><code>python identity_matrix.py sequence_identities.csv</code></li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
 </div></section></section>
 </div>
 </div>
@@ -15303,8 +17169,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://unpkg.com/reveal.js@4.0.2/dist/reveal.js",
-      "https://unpkg.com/reveal.js@4.0.2/plugin/notes/notes.js"
+      "https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js",
+      "https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"
     ],
 
     function(Reveal, RevealNotes){

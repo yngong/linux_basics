@@ -1,0 +1,128 @@
+/* Paper-White Academic (Standard Slide Layout) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+    --text-main: #1e293b;
+    --accent-blue: #2563eb;
+    --bg-white: #ffffff;
+    --code-bg: #f8fafc;
+    --border-light: #e2e8f0;
+}
+
+.reveal {
+    font-family: 'Inter', sans-serif !important;
+    color: var(--text-main) !important;
+    background-color: var(--bg-white) !important;
+}
+
+/* Remove the overrides that were breaking slide navigation */
+.reveal .slides {
+    text-align: left !important;
+}
+
+.reveal .slides section {
+    box-sizing: border-box !important;
+    padding: 20px 40px !important;
+    /* Do NOT set fixed height or overflow here, let Reveal.js handle it */
+}
+
+/* Headers */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+    font-family: 'Outfit', sans-serif !important;
+    text-transform: none !important;
+    font-weight: 700 !important;
+    color: var(--text-main) !important;
+}
+
+.reveal h1 {
+    font-size: 2em !important;
+    border-left: 10px solid var(--accent-blue);
+    padding-left: 15px !important;
+    margin-bottom: 0.6em !important;
+}
+
+.reveal h2 {
+    font-size: 1.4em !important;
+    color: var(--accent-blue) !important;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 0.5em !important;
+    padding-bottom: 5px;
+}
+
+/* Lists and Content */
+.reveal ul,
+.reveal ol {
+    margin-left: 1.2em !important;
+    line-height: 1.4 !important;
+    font-size: 0.85em !important;
+}
+
+.reveal li {
+    margin-bottom: 0.3em !important;
+}
+
+/* Code Blocks - High Contrast Light Theme */
+.reveal pre {
+    background: var(--code-bg) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 6px !important;
+    padding: 1rem !important;
+    width: 100% !important;
+    margin: 1em 0 !important;
+    box-shadow: none !important;
+}
+
+.reveal code {
+    font-family: 'Fira Code', monospace !important;
+    color: #0f172a !important;
+    font-size: 0.75em !important;
+}
+
+/* Tables */
+.reveal table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 0.65em !important;
+    /* Smaller to prevent vertical overflow */
+}
+
+.reveal table th {
+    background: #f1f5f9 !important;
+    color: var(--text-main) !important;
+    padding: 8px !important;
+    border-bottom: 2px solid var(--accent-blue) !important;
+}
+
+.reveal table td {
+    padding: 6px !important;
+    border-bottom: 1px solid var(--border-light) !important;
+}
+
+/* Images */
+.reveal img {
+    max-width: 90% !important;
+    max-height: 400px !important;
+    object-fit: contain !important;
+    margin: 0.5em auto !important;
+    display: block !important;
+}
+
+/* Style Reveal Controls to match */
+.reveal .controls {
+    color: var(--accent-blue) !important;
+}
+
+.reveal .progress {
+    height: 3px !important;
+}
+
+.reveal .progress span {
+    background: var(--accent-blue) !important;
+}
+
+.reveal .prompt {
+    display: none !important;
+}
