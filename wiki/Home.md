@@ -11,4 +11,4 @@ Welcome to the integrated Linux Course materials. This Wiki provides a structure
 ---
 
 > [!TIP]
-> **Prefer Slides?** You can also find the **[Integrated Slide Deck](file:///Users/yngong/git-my-repo/linux/linux_master.slides.html)** in the root directory for a high-quality presentation experience.
+> **Prefer Slides?** You can find the **[Integrated Slide Deck](https://github.com/yngong/linux_basics/blob/master/linux_master.slides.html)** in the root directory for a high-quality presentation experience.

@@ -6,4 +6,4 @@
 * **[🐚 Shell Scripting](linux_shell.md)**
 
 ---
-**[📺 Unified Slides](file:///Users/yngong/git-my-repo/linux/linux_master.slides.html)**
+**[📺 Unified Slides](https://github.com/yngong/linux_basics/blob/master/linux_master.slides.html)**
