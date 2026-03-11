@@ -1,33 +1,45 @@
-# Linux Command Line Teaching Materials
+# 🐧 Linux Command Line Basics for Data Science & AI
 
-Welcome to this comprehensive Linux Command Line course repository! This repository contains the complete teaching content designed for researchers, analysts, and beginners to master the Linux Command Line.
+Welcome to this comprehensive Linux Command Line course repository! This material is designed for researchers, analysts, and students to master the Linux Command Line—a fundamental skill in the era of AI and High-Performance Computing (HPC).
 
-## Course Structure
+## 🚀 Core Teaching Material
 
-This repository contains the presentation slides and Jupyter Notebooks demonstrating core concepts:
+The core content is centralized in a single, comprehensive Master Notebook:
 
-1. **Session 1: Linux Basics (Concepts and Operations)**
-   - Core Material: `linux_basics.ipynb`
-   - Covers: Why we need Linux, system architecture concepts, directory structure, absolute/relative paths, file permission management, and basic file operations (`ls`, `cd`, `cp`, `mv`, `rm`, etc.).
-   - **Engagement Focus**: Demonstrating how to accomplish repetitive tasks, which would require hundreds of mouse clicks, using a single command.
+- **[linux_master.ipynb](file:///Users/yngong/git-my-repo/linux_basics/linux_master.ipynb)**: A step-by-step guide covering:
+    - **Why CLI?**: The "Lego Logic" of tools and the necessity of text interfaces for remote power.
+    - **Environment Setup**: Quick start for Mac (Terminal) and PC (WSL).
+    - **Foundations**: Directory structures, absolute/relative paths, and file permissions.
+    - **Data Streams (I/O Redirection)**: Mastering `ls`, `cat`, `>`, and `>>`.
+    - **The Unix Philosophy**: Chaining commands with Pipes `|`.
+    - **Text Processing**: Using `grep`, `awk`, `sed`, `sort`, and `uniq` to handle massive datasets.
 
-2. **Session 2: Linux Shell (Data Streams and Text Processing)**
-   - Core Material: `linux_shell.ipynb`
-   - Covers: The Unix "Lego" philosophy (Pipeline `|`), standard input/output redirection (`>`, `<`), and advanced text processing tools (`cat`, `head`, `tail`, `grep`, `wc`, `sort`, `uniq`).
-   - **Engagement Focus**: Showcasing the limitations of GUI when opening massive data files, and the reality that remote supercomputing centers rely solely on text-based interfaces.
+## 🎨 Premium Slides Workflow
 
-3. **Advanced Supplement: Linux Advanced**
-   - Includes `linux_adv.ipynb` to explore deeper topics and automation scripting.
+This repository includes a professional presentation layer powered by **Reveal.js**.
 
-## Required Example Data
+- **[convert.sh](file:///Users/yngong/git-my-repo/linux_basics/convert.sh)**: A custom script to transform the Jupyter Notebook into a stunning HTML slideshow.
+- **[premium_slides.css](file:///Users/yngong/git-my-repo/linux_basics/premium_slides.css)**: Custom styling for a polished, high-end look.
 
-To facilitate hands-on practice, key data files are provided in the directory:
+**How to generate slides:**
+```bash
+./convert.sh linux_master.ipynb
+```
+This generates `linux_master.slides.html`, which you can open in any web browser.
 
-- `demo.fas` (~30MB sequence file): Ideal for demonstrating the CLI's advantage in processing large Next-Generation Sequencing (NGS) files (using `grep`, `wc` for statistics).
-- `demo.csv` / `metadata.csv`: Used for practicing advanced command line data filtering with `sed`, `awk`, etc.
-- Various Shell script examples (`.sh`): Such as `generate_csv.sh`, `input_name.sh`, used to demonstrate the power of automation.
+## 📂 Practice Workspace
 
-## Getting Started
+To facilitate hands-on practice, all example data and scripts are located in the `workspace/` directory:
 
-We recommend opening the `.ipynb` files using **Jupyter Notebook** or **VS Code**.
-Before starting the technical instruction, instructors can demonstrate the "Pain Point Scenarios" included at the top of each notebook. This helps students experience the urgency and necessity of learning the Command Line, making them more engaged as they dive into the specific commands.
+- **Data Files**: `demo.fas` (NGS sequence data), `demo.csv`, and `metadata.csv` for practicing text filtering and processing.
+- **Automation Scripts**: Examples like `generate_csv.sh` and `input_name.sh` to demonstrate shell scripting and decision-making logic.
+
+## 🎓 Teaching Methodology
+
+This course follows an **Engagement-First** approach:
+1. **Pain Point Scenarios**: Each section begins with a scenario where GUI methods fail (e.g., opening a 10GB file or repeating a task 1,000 times).
+2. **The "Flash-Forward"**: Demonstrating how a single line of code solves complex problems before diving into the syntax.
+3. **Live Practice**: Students are encouraged to run commands directly in the notebook or terminal to see immediate results.
+
+---
+*Maintained for teaching and research training. Open the notebook in VS Code or Jupyter to get started!*
