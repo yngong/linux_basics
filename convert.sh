@@ -15,6 +15,7 @@ echo "🎨 Converting $NOTEBOOK to Premium Slides..."
 # Perform conversion with modern Reveal.js 4.5.0
 jupyter nbconvert "$NOTEBOOK" \
     --to slides \
+    --embed-images \
     --SlidesExporter.reveal_url_prefix="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0"
 
 # Use sed to inject our custom CSS file into the generated HTML
